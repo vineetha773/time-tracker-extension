@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker Extension",
+  "version": "1.0",
+  "description": "Tracks time spent on websites and displays weekly productivity reports.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "resources": ["dashboard.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

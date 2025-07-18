@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Tracker</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 15px;
+      background: #f9f9f9;
+      color: #333;
+      width: 300px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #0078D7;
+    }
+
+    .site-entry {
+      background: #fff;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      font-size: 14px;
+    }
+
+    .tag {
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 8px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #005bb5;
+    }
+
+    #resetBtn {
+      background: #FF5757;
+    }
+
+    #resetBtn:hover {
+      background: #e14343;
+    }
+
+    .empty-msg {
+      color: #999;
+      font-style: italic;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>⏱ Time Spent Today</h2>
+  <div id="list">
+    <p class="empty-msg">Loading your data...</p>
+  </div>
+  <button id="resetBtn">Reset Time Data</button>
+  <button id="openDashboard">Open Full Dashboard</button>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>📊 Weekly Productivity Report</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0078D7;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      color: #444;
+      border-left: 4px solid #0078D7;
+      padding-left: 10px;
+    }
+
+    .site-entry {
+      background: white;
+      margin-bottom: 10px;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tag {
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-left: 10px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .tag-productive {
+      background-color: #28a745;
+    }
+
+    .tag-unproductive {
+      background-color: #dc3545;
+    }
+
+    .tag-neutral {
+      background-color: #6c757d;
+    }
+
+    #resetBtn {
+      display: block;
+      margin: 40px auto;
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #resetBtn:hover {
+      background: #e3342f;
+    }
+
+    .empty-message {
+      text-align: center;
+      color: #777;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Weekly Productivity Report</h1>
+  <div id="list"></div>
+  <button id="resetBtn">Reset Weekly Data</button>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
