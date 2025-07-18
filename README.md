@@ -41,6 +41,8 @@ This Chrome Extension tracks the time you spend on various websites and classifi
 
 # OUTPUT
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/dc10b240-38ab-4184-bdb2-4a2bf7ffbf7b" />
+
 
 
 
